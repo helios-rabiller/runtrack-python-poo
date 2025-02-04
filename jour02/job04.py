@@ -51,7 +51,8 @@ class Student:
             self.__niveau = "Insuffisant"
             return self.__niveau
         
-    def student_info(self):      
+    def student_info(self):
+        self.__student_eval__()      
         print(f"Prenom = {self.__prenom}\nNom = {self.__nom}\nid = {self.__nombre}\nNiveau = {self.__niveau}")#\nCredits = {self.__credits}
 
         
@@ -62,17 +63,12 @@ class Student:
 etudiant = Student("Doe","Jhon",145)
 
 etudiant.add_credits(10)
-etudiant.__student_eval__()
 etudiant.student_info()
 etudiant.add_credits(50)
-etudiant.__student_eval__()
 etudiant.student_info()
 etudiant.add_credits(10)
-etudiant.__student_eval__()
 etudiant.student_info()
 etudiant.add_credits(10)
-etudiant.__student_eval__()
 etudiant.student_info()
 etudiant.add_credits(10)
-etudiant.__student_eval__()
 etudiant.student_info()
