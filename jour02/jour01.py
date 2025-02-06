@@ -15,7 +15,10 @@ class Rectangle:
     def modifier_largueur(self,new_largeur):
         self.__largueur = new_largeur
         print(f"La largueur a été mise à jour à : {self.__largueur}")
+    def afficher(self):
+        print(f" la longeur du strinagle est {self.__longueur} et sa largeur est {self.__largeur}")
 
 rectangle = Rectangle(2, 2)
-
+rectangle.afficher()
 rectangle.modifier_longueur(24)
+rectangle.afficher()
